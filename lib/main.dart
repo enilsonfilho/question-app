@@ -13,7 +13,7 @@ class _PerguntaAppState extends State<PerguntaApp> {
     },
     {
       'texto': 'Qual é o seu animal favorito?',
-      'respostas': ['Coelho', 'Cobra', 'Elefante', 'Elefante'],
+      'respostas': ['Coelho', 'Cobra', 'Panda', 'Elefante'],
     },
     {
       'texto': 'Qual é o seu instrutor favorito?',
