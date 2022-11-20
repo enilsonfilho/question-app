@@ -10,28 +10,28 @@ class _PerguntaAppState extends State<PerguntaApp> {
     {
       'texto': 'Qual é a sua cor favorita?',
       'respostas': [
-        {'texto': 'Preto', 'nota': 10}, 
-        {'texto': 'Vermelho', 'nota': 5}, 
-        {'texto': 'Verde', 'nota': 3}, 
-        {'texto': 'Branco', 'nota': 1}
+        {'texto': 'Preto', 'ponto': 10}, 
+        {'texto': 'Vermelho', 'ponto': 5}, 
+        {'texto': 'Verde', 'ponto': 3}, 
+        {'texto': 'Branco', 'ponto': 1}
         ],
     },
     {
       'texto': 'Qual é o seu animal favorito?',
       'respostas': [
-        {'texto': 'Coelho', 'nota': 10}, 
-        {'texto': 'Cobra', 'nota': 7}, 
-        {'texto': 'Panda', 'nota': 8}, 
-        {'texto': 'Elefante', 'nota': 10}
+        {'texto': 'Coelho', 'ponto': 10}, 
+        {'texto': 'Cobra', 'ponto': 7}, 
+        {'texto': 'Panda', 'ponto': 8}, 
+        {'texto': 'Elefante', 'ponto': 10}
         ],
     },
     {
       'texto': 'Qual é o seu instrutor favorito?',
       'respostas': [
-        {'texto': 'Maria', 'nota': 4}, 
-        {'texto': 'João', 'nota': 9}, 
-        {'texto': 'Leo', 'nota': 10}, 
-        {'texto': 'Pedro', 'nota': 9}
+        {'texto': 'Maria', 'ponto': 4}, 
+        {'texto': 'João', 'ponto': 9}, 
+        {'texto': 'Leo', 'ponto': 10}, 
+        {'texto': 'Pedro', 'ponto': 9}
         ],
     },
   ].cast();
