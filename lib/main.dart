@@ -46,6 +46,13 @@ class _PerguntaAppState extends State<PerguntaApp> {
     }
   }
 
+  void _reiniciarQuestionario() {
+    setState(() {
+      _perguntaSelecionada = 0;
+      _pontuacaoTotal = 0;
+    });
+  }
+
   bool get temPerguntaSeleciona {
     return _perguntaSelecionada < _perguntas.length;
   }
