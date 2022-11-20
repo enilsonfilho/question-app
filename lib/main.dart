@@ -44,8 +44,6 @@ class _PerguntaAppState extends State<PerguntaApp> {
         _pontuacaoTotal += pontuacao;
       });
     }
-
-    print(_pontuacaoTotal);
   }
 
   bool get temPerguntaSeleciona {
