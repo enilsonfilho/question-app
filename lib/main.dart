@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import './questao.dart';
-import './resposta.dart';
+import 'package:projeto_perguntas/resultado.dart';
+import './questionario.dart';
 
 main() => runApp(PerguntaApp());
 
 class _PerguntaAppState extends State<PerguntaApp> {
   var _perguntaSelecionada = 0;
-  final _perguntas = const [
+  final List<Map<String,Object>> _perguntas = const [
     {
       'texto': 'Qual é a sua cor favorita?',
       'respostas': ['Preto', 'Vermelho', 'Verde', 'Branco'],
@@ -35,29 +35,20 @@ class _PerguntaAppState extends State<PerguntaApp> {
 
   @override
   Widget build(BuildContext context) {
-    List<String> respostas = temPerguntaSeleciona
-        ? _perguntas[_perguntaSelecionada]['respostas']
-        : [];
 
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        title: Text('Perguntas?'),
-        backgroundColor: Colors.orange,
-      ),
-      body: temPerguntaSeleciona
-          ? Column(
-              children: [
-                Questao(_perguntas[_perguntaSelecionada]['texto'].toString()),
-                ...respostas.map((t) => Resposta(t, _responder)).toList(),
-              ],
+          appBar: AppBar(
+            title: Text('Perguntas'),
+            backgroundColor: Colors.orange,
+          ),
+          body: temPerguntaSeleciona
+          ? Questionario(
+            perguntas: _perguntas, 
+            perguntaSelecionada: _perguntaSelecionada, 
+            responder: _responder
             )
-          : Center(
-              child: Text(
-                'Parabéns',
-                style: TextStyle(fontSize: 28),
-              ),
-            ),
+          : Resultado(),
       )
     );
   }
